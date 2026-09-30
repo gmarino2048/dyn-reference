@@ -2,6 +2,15 @@
 # so both paths get the same toolchain, components, and targets.
 [toolchain]
 channel = "stable"
-components = ["cargo", "clippy", "rust-docs", "rust-std", "rustc", "rustfmt"]
+components = [
+  "cargo",
+  "clippy",
+  "rust-analyzer",
+  "rust-docs",
+  "rust-src",
+  "rust-std",
+  "rustc",
+  "rustfmt",
+]
 targets = ["aarch64-apple-darwin"]
 profile = "default"

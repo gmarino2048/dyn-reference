@@ -1,0 +1,19 @@
+# Project-local Helix config; merged over ~/.config/helix/languages.toml.
+# rust-analyzer comes from the toolchain (rust-toolchain.toml / Nix shell),
+# so it is always version-matched to rustc.
+
+[language-server.rust-analyzer]
+command = "rust-analyzer"
+
+[language-server.rust-analyzer.config]
+check.command = "clippy"
+cargo.features = "all"
+inlayHints.bindingModeHints.enable = true
+inlayHints.closingBraceHints.minLines = 10
+inlayHints.lifetimeElisionHints.enable = "skip_trivial"
+procMacro.enable = true
+
+[[language]]
+name = "rust"
+auto-format = true
+language-servers = ["rust-analyzer"]
