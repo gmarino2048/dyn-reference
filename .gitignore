@@ -1,0 +1,5 @@
+/target
+# direnv is opt-in per developer; do not commit so it never auto-activates
+# for people who don't want it.
+.envrc
+.direnv/
